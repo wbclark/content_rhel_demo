@@ -11,4 +11,6 @@ To isolate this installation of the development branch from the rest of the syst
 8. Edit vars in demo playbook to set desired behavior: `vim content_rhel_demo.yml`
 9. Open Katello WebUI or observe Katello logs in terminal: `foreman-tail`
 10. Run the demo playbook: `ansible-playbook content_rhel_demo.yml`
-11. When done, deactivate the virtual environment: `deactivate`
+11. When you are done, deactivate the virtual environment: `deactivate`
+
+Happy Automating! Let us know how you like the role. Please direct feature requests, bug reports, etc to: https://github.com/theforeman/foreman-ansible-modules/issues
