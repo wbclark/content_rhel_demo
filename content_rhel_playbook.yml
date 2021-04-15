@@ -8,7 +8,6 @@
   roles:
     - role: content_rhel
       vars:
-        foreman_organization: "Demo Organization"
         foreman_manifest_download: false
         foreman_manifest_path: "/home/wclark/Projects/content_rhel_demo/manifest.zip"
         foreman_content_rhel_enable_rhel7: false
