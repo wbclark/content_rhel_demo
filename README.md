@@ -24,50 +24,71 @@ N.B. The `content_rhel` role configures Katello to provide RHEL content, and the
 
 1. Clone the demo project from GitHub to your machine:
 
-  `git clone https://github.com/wbclark/content_rhel_demo.git`
-  `cd content_rhel_demo`
+```shell
+$ git clone https://github.com/wbclark/content_rhel_demo.git
+$ cd content_rhel_demo
+```
 
 2. Create and Activate a Python Virtual Environment for the demo projects:
 
-  `python3 -m venv env`
-  `source env/bin/activate`
+```shell
+$ python3 -m venv env
+$ source env/bin/activate
+```
 
 2.a. You can confirm that you are using the virtual environment's python from this point, by checking:
 
-  `which python`
-  `python --version`
+```shell
+$ which python
+$ python --version
+```
 
 3. Install Ansible and apypie (library for communicating with Katello API) to the virtual environment:
 
-  `pip install ansible apypie`
+```shell
+$ pip install ansible apypie
+```
 
 3.a. You can confirm that you are using the virtual environment's ansible from this point, by checking:
 
-  `which ansible`
-  `ansible --version`
+```shell
+$ which ansible
+$ ansible --version
+```
 
 4. Install the development branch of the Foreman collection to the virtual environment:
 
-  `ansible-galaxy collection install git+https://github.com/theforeman/foreman-ansible-modules.git`
+```shell
+$ ansible-galaxy collection install git+https://github.com/theforeman/foreman-ansible-modules.git
+```
 
 5. Copy the server variables template and edit your server variables file to point to your live Katello instance:
 
-  `cp vars/server.yml/{.example,}`
-  `vim vars/server.yml`
+```shell
+$ cp vars/server.yml/{.example,}
+$ vim vars/server.yml
+```
 
 6. Inspect the demo playbook. Optionally, edit role variables to set desired behavior.
 
-  `vim content_rhel_demo.yml`
+```shell
+$ vim content_rhel_demo.yml
+```
 
 For the complete list of supported role variables, refer to the `content_rhel` role [README.md](https://github.com/theforeman/foreman-ansible-modules/blob/develop/roles/content_rhel/README.md)
 
 7. If you so desire, open the Katello WebUI to the Monitor --> Tasks page to directly observe progress, or directly observe system logs via a terminal session.
 
-  `foreman-tail`
+```shell
+$ foreman-tail                             # tail all logs, including candlepin and pulp logs
+$ tail -f /var/log/foreman/production.log  # quieter alternative, production.log only
+```
 
 8. Run the demo playbook.
 
-  `ansible-playbook content_rhel_demo.yml`
+```shell
+$ ansible-playbook content_rhel_demo.yml
+```
 
 9. When the playbook is complete, find the applied confiugrations on the Katello WebUI. With the Organization context set to "Demo Organization". Some hints: check Content --> Sync Status to see whether repositories synced or are syncing; check Content --> Subscriptions to see the uploaded subscription manifest; check Content --> Sync Plans to check the sync plan that the role created; check Content --> Activation Keys to see the activation key that the role created; check Monitor --> Tasks to see status of any tasks that ran or are running as part of the role.
 
@@ -77,11 +98,13 @@ For the complete list of supported role variables, refer to the `content_rhel` r
 
 2. Finally deactivate the Python virtual environment and confirm that you are once again using your system's Python and Ansible:
 
-  `deactivate`
-  `which python`
-  `python --version`
-  `which ansible`
-  `ansible --version`
+```shell
+$ deactivate
+$ which python
+$ python --version
+$ which ansible
+$ ansible --version
+```
 
 ## Where can I contribute, discuss, provide feedback, or find more information? ##
 
