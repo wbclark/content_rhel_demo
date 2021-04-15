@@ -87,12 +87,12 @@ For the complete list of supported role variables, refer to the `content_rhel` r
 
 Happy Automating and thanks for checking out the demo! Please let us know what you think.
 
-Please direct issues related to this demo to the issues tab on this repository.
+Please direct issues related to this demo to the issues tab on [this repository](https://github.com/wbclark/content_rhel_demo).
 
-For Foreman Ansible Collection feedback, including bug reports, feature requests, and pull requests, please use: https://github.com/theforeman/foreman-ansible-modules
+For Foreman Ansible Collection feedback, including bug reports, feature requests, and pull requests, please visit the [FAM Repository](https://github.com/theforeman/foreman-ansible-modules) on GitHub.
 
-For other feedback and discussion, please use the community forum: https://community.theforeman.org/
+For other feedback and discussion, please use the [community forum](https://community.theforeman.org/).
 
-Find other Foreman community events and demos on the community calendar: https://community.theforeman.org/calendar
+Find other Foreman community events and demos on the [community calendar](https://community.theforeman.org/calendar).
 
-For previous live demos and other recorded community events, visit the YouTube channel: https://www.youtube.com/channel/UCCo7AZ1oG6TbG0-dwjRqCmw
+For previous live demos and other recorded community events, visit the [Foreman Community Channel](https://www.youtube.com/channel/UCCo7AZ1oG6TbG0-dwjRqCmw) on YouTube.
