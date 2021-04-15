@@ -1,0 +1,6 @@
+---
+foreman_username: demo_user
+foreman_password: "password"
+foreman_server_url: "https://katello.example.com"
+foreman_validate_certs: false
+...
