@@ -1,7 +1,7 @@
-NOTE: The content_rhel role is not released, but will be in an upcoming release of the FAM collection. For the purposes of this demo, we will install the development branch.
+NOTE: The [content_rhel role](https://github.com/theforeman/foreman-ansible-modules/tree/develop/roles/content_rhel) is not released, but will be in an upcoming release of the FAM collection. For the purposes of this demo, we will install the development branch.
 To isolate this installation of the development branch from the rest of the system, we'll install it in a virtual environment.
 
-1. Install Katello from the documentation or using Forklift. Give it an initial organization like "Demo Organization"
+1. Install Katello from the [Documentation](https://theforeman.org/plugins/katello/3.18/installation/index.html) or using [Forklift](https://github.com/theforeman/forklift). Give it an initial organization like "Demo Organization"
 2. Clone this project: `git clone https://github.com/wbclark/content_rhel_demo.git` and `cd content_rhel_demo`
 3. Create a virtual environment: `python3 -m venv env`
 4. Activate the virtual environment: `source env/bin/activate`
