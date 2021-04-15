@@ -1,4 +1,5 @@
 NOTE: The content_rhel role is not released, but will be in an upcoming release of the FAM collection. For the purposes of this demo, we will install the development branch.
+To isolate this installation of the development branch from the rest of the system, we'll install it in a virtual environment.
 
 1. Install Katello from the documentation or using Forklift. Give it an initial organization like "Demo Organization"
 2. Clone this project: `git clone https://github.com/wbclark/content_rhel_demo.git` and `cd content_rhel_demo`
