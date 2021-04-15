@@ -8,5 +8,5 @@ NOTE: The content_rhel role is not released, but will be in an upcoming release 
 6. Install FAM collection: `ansible-galaxy collection install git+https://github.com/theforeman/foreman-ansible-modules.git`
 7. Copy and Edit Server Variables from template: `cp vars/server.yml{.example,}` and `vim vars/server.yml`
 8. Edit vars in demo playbook to set desired behavior: `vim content_rhel_demo.yml`
-9. Open Katello WebUI or observe Katello looks in terminal: `foreman-tail`
+9. Open Katello WebUI or observe Katello logs in terminal: `foreman-tail`
 10. Run the demo playbook: `ansible-playbook content_rhel_demo.yml`
