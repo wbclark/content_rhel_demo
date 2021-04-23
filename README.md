@@ -36,7 +36,7 @@ $ python3 -m venv env
 $ source env/bin/activate
 ```
 
-2.a. You can confirm that you are using the virtual environment's python from this point, by checking:
+2.a. You can confirm that you are using the virtual environment's Python from this point, by checking:
 
 ```shell
 $ which python
@@ -49,14 +49,14 @@ $ python --version
 $ pip install ansible apypie
 ```
 
-3.a. You can confirm that you are using the virtual environment's ansible from this point, by checking:
+3.a. You can confirm that you are using the virtual environment's Ansible from this point, by checking:
 
 ```shell
 $ which ansible
 $ ansible --version
 ```
 
-4. Install the development branch of the Foreman collection to the virtual environment:
+4. Install the development branch of the Foreman collection to the virtual environment's Ansible:
 
 ```shell
 $ ansible-galaxy collection install git+https://github.com/theforeman/foreman-ansible-modules.git
