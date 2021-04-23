@@ -69,7 +69,7 @@ $ cp vars/server.yml/{.example,}
 $ vim vars/server.yml
 ```
 
-6. Inspect the demo playbook. Optionally, edit role variables to set desired behavior.
+6. Inspect the demo playbook. You'll need to update the subscription manifest path to the location where it was downloaded on your machine. Optionally, edit other role variables to set desired behavior.
 
 ```shell
 $ vim content_rhel_demo.yml
