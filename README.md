@@ -65,7 +65,7 @@ $ ansible-galaxy collection install git+https://github.com/theforeman/foreman-an
 5. Copy the server variables template and edit your server variables file to point to your live Katello instance:
 
 ```shell
-$ cp vars/server.yml/{.example,}
+$ cp vars/server.yml{.example,}
 $ vim vars/server.yml
 ```
 
