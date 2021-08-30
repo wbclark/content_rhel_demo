@@ -8,7 +8,7 @@ For more details, See the [live recording](https://youtu.be/k0spcDCIYYU?t=176) f
 
 ## What do I need to run the demo? ##
 
-1. A Red Hat Login with the ability to create a [Subscription Allocation](https://access.redhat.com/management/subscription_allocations). Craete a Subscription Allocation for the demo and assign at least one subscription providing RHEL repositories to it. Download the Subscription Manifest (manifest.zip file) and copy it to the location where you will run the demo.
+1. A Red Hat Login with the ability to create a [Subscription Allocation](https://access.redhat.com/management/subscription_allocations). Create a Subscription Allocation for the demo and assign at least one subscription providing RHEL repositories to it. Download the Subscription Manifest (manifest.zip file) and copy it to the location where you will run the demo.
 
 N.B. The `content_rhel` role configures Katello to provide RHEL content, and therefore requires a Red Hat Subscription Manifest providing RHEL content. We would like to expand the collection with roles providing other operating systems as well. Such a role might drop the manifest import step, add custom_credentials if any are needed for the OS, and use custom repositories instead of Red Hat repository sets.
 
